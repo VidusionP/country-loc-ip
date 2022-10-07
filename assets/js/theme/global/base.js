@@ -35,20 +35,41 @@ export default function () {
                         }, 3500);
                     } else if (data.loc == 'FR') {
                         setTimeout(function () {
+                            // $('.popup-country').css({ display: 'flex' });
+                            // $('.popup-country-title').append('bonjour');
+                            // $('.popup-country-main').append(
+                            //     "Il semble que vous nous rendiez visite depuis la France.<br/>Vous pouvez consulter notre site web en France pour les prix en Euros et les options d'expédition locales."
+                            // );
+
+                            // $('.popup-country-link').append('emmenez-moi là');
+                            // $('.popup-country-continue').append('<div>No, I am not from France</div><div class=popup-country-continue-link>Continue Browsing!</div>');
+
+                            // $('.popup-country-link').attr('href', '//superhairpieces.fr');
+
+                            // $('.popup-country-continue-link').on('click', function () {
+                            //     $('.popup-country').hide();
+                            // });
+                            // $('.popup-country-overlay').on('click', function () {
+                            //     $('.popup-country').hide();
+                            // });
                             $('.popup-country').css({ display: 'flex' });
-                            $('.popup-country-title').append('bonjour');
+                            $('.popup-country-title').append('Choose your location');
                             $('.popup-country-main').append(
-                                "Il semble que vous nous rendiez visite depuis la France.<br/>Vous pouvez consulter notre site web en France pour les prix en Euros et les options d'expédition locales."
+                                // "Il semble que vous nous rendiez visite depuis la France.<br/>Vous pouvez consulter notre site web en France pour les prix en Euros et les options d'expédition locales."
+                                "Seems like you are visiting us from France.<br/>Do you want to visit our French website for EUR prices and local shipping options?"
                             );
+                            $('.popup-country-flag').append("<img style='width:24px; border-radius:3px; margin-right:5px;' src=https://cdn.stamped.io/cdn/flags/fr.svg><span>France</span>")
+                            $('.popup-country-lang').append("français")
+                            $('.popup-country-lang').attr('href', '//superhairpieces.fr');
+                            $('.popup-country-lang1').append("ENGLISH")
+                            $('.popup-country-lang1').attr('href', '//en.superhairpieces.fr');
 
-                            $('.popup-country-link').append('emmenez-moi là');
-                            $('.popup-country-continue').append('<div>No, I am not from France</div><div class=popup-country-continue-link>Continue Browsing!</div>');
+                            $('.popup-country-flag1').append("<img style='width:24px; border-radius:3px;' src=https://cdn.stamped.io/cdn/flags/us.svg><span>United States</span>")
+                            $('.popup-country-lang2').append("ENGLISH")
+                            $('.popup-country-lang2').attr('href', '//superhairpieces.com');
+                            $('.popup-country-lang3').append("français")
+                            $('.popup-country-lang3').attr('href', '//fr.superhairpieces.com');
 
-                            $('.popup-country-link').attr('href', '//superhairpieces.fr');
-
-                            $('.popup-country-continue-link').on('click', function () {
-                                $('.popup-country').hide();
-                            });
                             $('.popup-country-overlay').on('click', function () {
                                 $('.popup-country').hide();
                             });
