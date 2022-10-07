@@ -1830,14 +1830,15 @@ margin-top: 20px ;
     // display: flex;
     // flex-direction: column;
     border-bottom: 2px solid rgb(196, 196, 196);
-    width: 180px;
+
     margin: auto;
     padding-bottom: 20px;
 }
 .popup-country-sec {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
     align-items: center;
 }
 .popup-country-lang {
@@ -1852,13 +1853,8 @@ margin-top: 20px ;
     color: rgb(58, 166, 255) !important;
     margin: unset !important;
     padding: unset !important;
-
 }
-
 .popup-country2 {
-    // display: flex;
-    // flex-direction: column;
-    width: 180px;
     margin: 20px auto 0;
 }
 .popup-country-lang2 {
@@ -1869,8 +1865,6 @@ margin-top: 20px ;
     width: 100px;
     margin: unset !important;
     height: 45px;
-
-
 }
 .popup-country-lang3 {
     background-color: unset !important;
@@ -1880,7 +1874,80 @@ margin-top: 20px ;
 }
 .popup-country-flag {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
 }
 .popup-country-flag1 {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+
+}
+.popup-country-title {
+    font-size: 1.3rem !important;
+}
+@media (min-width:551px) {
+    .popup-country-content {
+        padding: 3rem !important;
+    }
+    .popup-country-main2 {
+        display: flex;
+        justify-content: center;
+        // margin-top: 30px;
+        max-width: 500px;
+        margin: 30px auto 0;
+    }
+    .popup-country1 {
+        padding-bottom: unset;
+        border-bottom: unset;
+        margin: unset;
+        border-right: 2px solid rgb(196, 196, 196);
+    }
+    .popup-country2 {
+        margin: unset;
+    }
+    .popup-country-sec {
+        flex-direction: column;
+    }
+    .popup-country-lang {
+        margin-bottom: unset !important;
+        width: 120px;
+    }
+    .popup-country-lang2 {
+        margin-bottom: unset !important;
+        width: 120px;
+    }
+    .popup-country1{
+        width: 50%;
+    }
+    .popup-country2{
+        width: 50%;
+
+    }
+}
+@media (min-width:1024px) {
+    .popup-country-lang {
+        width: 160px;
+        height: 50px;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .popup-country-lang2 {
+        width: 160px;
+        height: 50px;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .popup-country-content {
+        max-width: 600px !important;
+    }
+    .popup-country-title {
+        font-size: 1.7rem !important;
+    }
 }
